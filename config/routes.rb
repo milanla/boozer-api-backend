@@ -5,4 +5,6 @@ Rails.application.routes.draw do
       resources :cocktails
     end
   end
+
+  resources :cocktails, only: [:new, :create]
 end
