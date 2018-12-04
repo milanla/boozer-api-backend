@@ -3,8 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :ingredients
       resources :cocktails
+      resources :proportions
     end
   end
-
-  resources :cocktails, only: [:new, :create]
 end
